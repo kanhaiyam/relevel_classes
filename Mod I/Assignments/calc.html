@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+        // accept the number from the user through prompt box
+        const sign = prompt("Enter operator to perform the calculation ( either +, -, * or / ): ");
+        const n1 = parseFloat(prompt("Enter the first number: ")); 
+        const n2 = parseFloat(prompt("Enter the second number: "));
+        let result = 'Result is ';
+        
+        if (sign == '+') {
+            result += (n1 + n2);
+        }
+        else if (sign == '-') {
+            result += (n1 - n2);
+        }
+        else if (sign == '*') {
+            result += (n1 * n2);
+        }
+        else  if (sign == '/') {
+            result += (n1 / n2);
+        } else result = "Invalid operator given.";
+        console.log(result);
+        </script>
+    </head>
+</html>
